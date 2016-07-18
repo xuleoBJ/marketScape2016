@@ -4,3 +4,10 @@ E:\marketScape2016\obj\x86\Debug\marketScape.Properties.Resources.resources
 E:\marketScape2016\obj\x86\Debug\marketScape.csproj.GenerateResource.Cache
 E:\marketScape2016\obj\x86\Debug\marketScape.exe
 E:\marketScape2016\obj\x86\Debug\marketScape.pdb
+D:\marketScape\marketScape\marketScape\obj\x86\Debug\marketScape.exe
+D:\marketScape\marketScape\marketScape\obj\x86\Debug\marketScape.pdb
+D:\marketScape\marketScape\marketScape\bin\Debug\marketScape.exe
+D:\marketScape\marketScape\marketScape\bin\Debug\marketScape.pdb
+D:\marketScape\marketScape\marketScape\obj\x86\Debug\marketScape.FormMain.resources
+D:\marketScape\marketScape\marketScape\obj\x86\Debug\marketScape.Properties.Resources.resources
+D:\marketScape\marketScape\marketScape\obj\x86\Debug\marketScape.csproj.GenerateResource.Cache
