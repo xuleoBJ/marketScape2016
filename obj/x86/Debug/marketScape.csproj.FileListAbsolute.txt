@@ -1,0 +1,6 @@
+E:\marketScape2016\bin\Debug\marketScape.exe
+E:\marketScape2016\bin\Debug\marketScape.pdb
+E:\marketScape2016\obj\x86\Debug\marketScape.Properties.Resources.resources
+E:\marketScape2016\obj\x86\Debug\marketScape.csproj.GenerateResource.Cache
+E:\marketScape2016\obj\x86\Debug\marketScape.exe
+E:\marketScape2016\obj\x86\Debug\marketScape.pdb
