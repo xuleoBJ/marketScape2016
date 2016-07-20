@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.statusStripMain = new System.Windows.Forms.StatusStrip();
             this.menuStripMain = new System.Windows.Forms.MenuStrip();
-            this.信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSys = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.版本信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tbgStateMent = new System.Windows.Forms.TabPage();
             this.lblAuthor = new System.Windows.Forms.Label();
             this.lblFrontInfor = new System.Windows.Forms.Label();
@@ -41,8 +43,8 @@
             this.chartStock = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbgMoodIndex = new System.Windows.Forms.TabPage();
-            this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.版本信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSet = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiTradeReminder = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripMain.SuspendLayout();
             this.tbgStateMent.SuspendLayout();
             this.tbgWavePredict.SuspendLayout();
@@ -61,19 +63,34 @@
             // menuStripMain
             // 
             this.menuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.信息ToolStripMenuItem,
-            this.帮助ToolStripMenuItem});
+            this.tsmiSys,
+            this.tsmiSet,
+            this.tsmiHelp});
             this.menuStripMain.Location = new System.Drawing.Point(0, 0);
             this.menuStripMain.Name = "menuStripMain";
             this.menuStripMain.Size = new System.Drawing.Size(640, 25);
             this.menuStripMain.TabIndex = 1;
             this.menuStripMain.Text = "menuStrip1";
             // 
-            // 信息ToolStripMenuItem
+            // tsmiSys
             // 
-            this.信息ToolStripMenuItem.Name = "信息ToolStripMenuItem";
-            this.信息ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
-            this.信息ToolStripMenuItem.Text = "信息";
+            this.tsmiSys.Name = "tsmiSys";
+            this.tsmiSys.Size = new System.Drawing.Size(44, 21);
+            this.tsmiSys.Text = "系统";
+            // 
+            // tsmiHelp
+            // 
+            this.tsmiHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.版本信息ToolStripMenuItem});
+            this.tsmiHelp.Name = "tsmiHelp";
+            this.tsmiHelp.Size = new System.Drawing.Size(44, 21);
+            this.tsmiHelp.Text = "帮助";
+            // 
+            // 版本信息ToolStripMenuItem
+            // 
+            this.版本信息ToolStripMenuItem.Name = "版本信息ToolStripMenuItem";
+            this.版本信息ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.版本信息ToolStripMenuItem.Text = "版本信息";
             // 
             // tbgStateMent
             // 
@@ -106,7 +123,7 @@
             this.lblFrontInfor.Name = "lblFrontInfor";
             this.lblFrontInfor.Size = new System.Drawing.Size(584, 26);
             this.lblFrontInfor.TabIndex = 0;
-            this.lblFrontInfor.Text = "本软件不保证预测的争取性，不对用户操作有指导性建议。";
+            this.lblFrontInfor.Text = "本软件不保证预测的正确性，不对用户操作有指导性建议。";
             // 
             // tbgWavePredict
             // 
@@ -121,17 +138,17 @@
             // 
             // chartStock
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartStock.ChartAreas.Add(chartArea3);
+            chartArea2.Name = "ChartArea1";
+            this.chartStock.ChartAreas.Add(chartArea2);
             this.chartStock.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend3.Name = "Legend1";
-            this.chartStock.Legends.Add(legend3);
+            legend2.Name = "Legend1";
+            this.chartStock.Legends.Add(legend2);
             this.chartStock.Location = new System.Drawing.Point(3, 3);
             this.chartStock.Name = "chartStock";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chartStock.Series.Add(series3);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartStock.Series.Add(series2);
             this.chartStock.Size = new System.Drawing.Size(626, 425);
             this.chartStock.TabIndex = 0;
             this.chartStock.Text = "chart1";
@@ -158,19 +175,19 @@
             this.tbgMoodIndex.Text = "情绪指数提醒";
             this.tbgMoodIndex.UseVisualStyleBackColor = true;
             // 
-            // 帮助ToolStripMenuItem
+            // tsmiSet
             // 
-            this.帮助ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.版本信息ToolStripMenuItem});
-            this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
-            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
-            this.帮助ToolStripMenuItem.Text = "帮助";
+            this.tsmiSet.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiTradeReminder});
+            this.tsmiSet.Name = "tsmiSet";
+            this.tsmiSet.Size = new System.Drawing.Size(44, 21);
+            this.tsmiSet.Text = "设置";
             // 
-            // 版本信息ToolStripMenuItem
+            // tsmiTradeReminder
             // 
-            this.版本信息ToolStripMenuItem.Name = "版本信息ToolStripMenuItem";
-            this.版本信息ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.版本信息ToolStripMenuItem.Text = "版本信息";
+            this.tsmiTradeReminder.Name = "tsmiTradeReminder";
+            this.tsmiTradeReminder.Size = new System.Drawing.Size(152, 22);
+            this.tsmiTradeReminder.Text = "交易提醒";
             // 
             // FormMain
             // 
@@ -199,7 +216,7 @@
 
         private System.Windows.Forms.StatusStrip statusStripMain;
         private System.Windows.Forms.MenuStrip menuStripMain;
-        private System.Windows.Forms.ToolStripMenuItem 信息ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSys;
         private System.Windows.Forms.TabPage tbgStateMent;
         private System.Windows.Forms.TabPage tbgWavePredict;
         private System.Windows.Forms.TabControl tabControl1;
@@ -207,8 +224,10 @@
         private System.Windows.Forms.Label lblAuthor;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartStock;
         private System.Windows.Forms.TabPage tbgMoodIndex;
-        private System.Windows.Forms.ToolStripMenuItem 帮助ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiHelp;
         private System.Windows.Forms.ToolStripMenuItem 版本信息ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSet;
+        private System.Windows.Forms.ToolStripMenuItem tsmiTradeReminder;
     }
 }
 
